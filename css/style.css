@@ -50,7 +50,22 @@ img {
   /* FOOTER */
 
   footer {
-    background-color: #333;
+    background-color: #8b3f3f;
     color: #fff;
     text-align: center;
   }
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+    /* Ajustements pour les tablettes */
+    #galerie {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustements pour les mobiles */
+    #galerie {
+        grid-template-columns: 1fr;
+    }
+}
